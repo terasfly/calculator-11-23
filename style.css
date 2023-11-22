@@ -1,0 +1,112 @@
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            min-width: 350px;
+            background: rgb(220, 216, 6);
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: skyblue;
+            min-width: 300px;
+            min-height: 300px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        
+        .calculator--screen {
+            position: relative;
+            height: 50px;
+            background: #fff;
+            width: 280px;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 43px;
+            text-align: right;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+            border-radius: 7px;
+            overflow: hidden;
+            /* arba overflow: hidden; */
+        }
+        
+        .calculator--screen-counting {
+            position: absolute;
+            bottom: 50px;
+            right: 60px;
+            transform: translate(50px, 50px);
+            white-space: nowrap;
+        }
+        /* buttons */
+        
+        .calculator--buttons {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 'a a a a''b b b b ''c c c c''d d d d';
+            gap: 8px;
+            min-width: 280px;
+            min-height: 250px;
+            /* font-size: 40px; */
+        }
+        
+        .button {
+            /* border-radius: 10px; */
+            font-size: 28px;
+            background: #D3D3D3;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+            border-radius: 7px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+        
+        .button:hover {
+            background: #BEBEBE;
+            /* Lighter shade of grey */
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+            /* Slightly deeper shadow */
+            transform: scale(1.05);
+            /* Slightly larger */
+        }
+        
+        .button--clean {
+            background: rgb(238, 128, 157);
+        }
+        
+        .button--plus {
+            background: rgb(255, 255, 132);
+        }
+        
+        .button--minus {
+            background: rgb(255, 255, 132);
+        }
+        
+        .button--multiple {
+            background: rgb(255, 255, 132);
+        }
+        
+        .button--devide {
+            background: rgb(255, 255, 132);
+        }
+        
+        @media screen and (width: 410px) {
+            body {
+                background-color: violet;
+            }
+        }
